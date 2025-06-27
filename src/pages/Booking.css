@@ -1,0 +1,70 @@
+.booking {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(to bottom right, #fff1f5, #ffe6ec);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+  font-family: 'Georgia', serif;
+  animation: fadeInBooking 0.8s ease;
+}
+
+.booking h1 {
+  font-size: 2rem;
+  color: #c94f7c;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.booking input,
+.booking select {
+  padding: 0.9rem 1.1rem;
+  border-radius: 15px;
+  border: 1px solid #f2b8c6;
+  background-color: #fff9fa;
+  font-size: 1rem;
+  color: #5a2e3c;
+  transition: border 0.3s ease;
+}
+
+.booking input:focus,
+.booking select:focus {
+  outline: none;
+  border-color: #ff8ead;
+  box-shadow: 0 0 5px rgba(255, 130, 160, 0.3);
+}
+
+.booking button {
+  background-color: #ff7fa1;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.booking button:hover {
+  background-color: #e7608b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 128, 160, 0.3);
+}
+
+@keyframes fadeInBooking {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
